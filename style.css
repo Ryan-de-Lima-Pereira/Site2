@@ -13,46 +13,47 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-area: 1 / 1 / 2 / 2 ;
 }
 .dois{
-
+    grid-area: 1 / 2 / 2 / 3 ;
 }
 .tres {
     display: flex;
-   
     justify-content: flex-end;
+    grid-area: 1 / 3 / 2 / 4 ;
 }
 .quatro{
-
+    grid-area: 2 / 1 / 3 / 2 ;
 }
 .cinco{
     position: relative;
     display: flex;
- 
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    grid-area: 2 / 2 / 3 / 3 ;
 }
 .seis{
     display: flex;
-   
     justify-content: flex-start;
     align-items: center;
+    grid-area: 2 / 3 / 3 / 4 ;
 }
 .sete{
- 
+    grid-area: 3 / 1 / 4 / 2 ;
 }
 .oito {
     display: flex;
-   
     justify-content: center;
     align-items: center;
+    grid-area: 3 / 2 / 4 / 3 ;
 }
 .nove {
     display: flex;
-   
     justify-content: center;
     align-items: flex-end;
+    grid-area: 3 / 3 / 4 / 4 ;
 }
 
 .bloco20x20{
@@ -109,4 +110,162 @@ main {
 .audio{
     position: relative;
     top: 20px;
+}
+
+/*Responsividade */
+@media screen and (max-width: 425px) {
+    main{
+        grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .um{
+        grid-area: 1 / 1 / 2 / 2;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .dois{
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+    .tres{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .quatro{
+        grid-area: 3 / 1 / 4 / 2 ;
+    }
+    .cinco{
+        grid-area: 3 / 1 / 4 / 2 ;
+    }
+    .seis{
+        grid-area: 4 / 1 / 5 / 2;
+        justify-content: flex-end;
+    }
+    .sete{
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    .oito{
+        grid-area: 4 / 1 / 5 / 2;
+        justify-content: flex-start;
+    }
+    .nove{
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    /* Tamanho das imagens */
+    .gatoC{
+        width: 111px;
+        height: 91px;
+    }
+    .gatoB{
+        width: 102px;
+        height: 91px;
+    }
+    .gatoD{
+        width: 87px;
+        height: 80px;
+    }
+    .bolo{
+        position: absolute;
+        width: 133px;
+        height: 117px;
+        z-index: 2;
+        top: -131px;
+    }
+    .cachorroD{
+        width: 129px;
+        height: 159px;
+    }
+    .audio{
+        width: 333px;
+        height: 30px;
+    }
+    .parabens{
+        width: 241px;
+        height: 46px;
+    }
+}
+@media screen and (max-width: 414px) {
+    main{
+        grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .um{
+        grid-area: 1 / 1 / 2 / 2;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .dois{
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+    .tres{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .quatro{
+        grid-area: 3 / 1 / 4 / 2 ;
+    }
+    .cinco{
+        grid-area: 3 / 1 / 4 / 2 ;
+    }
+    .seis{
+        grid-area: 4 / 1 / 5 / 2;
+        justify-content: flex-end;
+    }
+    .sete{
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    .oito{
+        grid-area: 4 / 1 / 5 / 2;
+        justify-content: flex-start;
+    }
+    .nove{
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    /* Tamanho das imagens */
+    .gatoC{
+        width: 180px;
+        height: 140px;
+    }
+    .gatoD{
+        width: 124px;
+        height: 105px;
+    }
+    .bolo{
+        position: absolute;
+        width: 207px;
+        height: 160px;
+        z-index: 2;
+        top: -185px;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    /* tamanho das figuras */
+    .gatoB{
+        width: 92px;
+        height: 90px;
+    }
+    .cachorroD{
+        width: 127px;
+        height: 126px;
+    }
+    .audio {
+        width: 282px;
+        height: 25px;
+    }
+    .parabens{
+        width: 220px;
+        height: 56px;
+    }
+    .bolo{
+        width: 123px;
+        height: 112px;
+        z-index: 2;
+        top: -119px;
+    }
+    .gatoD{
+        width: 89px;
+        height: 83px;
+    }
+    .gatoC{
+        width: 103px;
+        height: 73px;
+    }
 }
